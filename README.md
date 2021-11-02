@@ -29,6 +29,18 @@ sudo make activate  # this will enable and start systemd timer
 Edit `/etc/autocleaner/config.rb` and define which folders you want to
 be auto-cleaned and how long to store files inside them.
 
+```ruby
+module Config
+FOLDERS = [
+	# Define your folders here.
+	{ :folder => "/tmp", :days => 900 },
+	{ :folder => "/var/log/myservice", :days => 30 },
+]
+end
+```
+
+Days are counted from file's _modification time_ (mtime).
+
 **Note:** you **can** define overlapping folders. In such cases, **smallest**
 storage period wins. In other words, if a file is to be kept by one policy
 and to be deleted by another, it will be deleted.
