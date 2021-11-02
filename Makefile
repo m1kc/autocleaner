@@ -3,7 +3,8 @@ all:
 
 install:
 	mkdir -p /etc/systemd/system/
-	cp -v autocleaner.{service,timer} /etc/systemd/system/
+	cp -v autocleaner.service /etc/systemd/system/
+	cp -v autocleaner.timer /etc/systemd/system/
 	systemctl daemon-reload
 
 activate:
