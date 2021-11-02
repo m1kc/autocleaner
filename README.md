@@ -3,6 +3,10 @@
 A program that deletes your files with configurable storage period.
 It uses `find` internally, and therefore it's very fast.
 
+:wrench: Quality: **beta** 
+ 
+:cityscape: Used in production since **Nov 2021**
+
 ## Requirements
 
 * Ruby 2.7
