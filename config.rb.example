@@ -1,0 +1,7 @@
+module Config
+FOLDERS = [
+	# Define your folders here.
+	{ :folder => "/tmp", :days => 900 },
+	{ :folder => "/tmp2", :days => 900 },
+]
+end
