@@ -25,7 +25,7 @@ sudo make activate  # this will enable and start systemd timer
 
 ## Usage
 
-Copy `config.rb.example` to `config.rb` and define which folders you want to
+Edit `/etc/autocleaner/config.rb` and define which folders you want to
 be auto-cleaned and how long to store files inside them.
 
 **Note:** you **can** define overlapping folders. In such cases, **smallest**
