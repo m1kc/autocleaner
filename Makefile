@@ -5,6 +5,8 @@ install:
 	mkdir -p /etc/systemd/system/
 	cp -v autocleaner.service /etc/systemd/system/
 	cp -v autocleaner.timer /etc/systemd/system/
+	mkdir -p /etc/autocleaner
+	cp -v config.rb.example /etc/autocleaner/
 	systemctl daemon-reload
 
 activate:

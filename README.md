@@ -14,9 +14,8 @@ It uses `find` internally, and therefore it's very fast.
 cd /opt
 sudo git clone https://github.com/m1kc/autocleaner.git
 cd autocleaner
-cp config.rb.example config.rb
-nano config.rb  # edit config as you see fit
 sudo make install
+sudo nano /etc/autocleaner/config.rb  # edit config as you see fit
 sudo make activate  # this will enable and start systemd timer
 ```
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require './config.rb'
+require '/etc/autocleaner/config.rb'
 
 ################################################################################
 # Functions
