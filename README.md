@@ -38,3 +38,4 @@ and to be deleted by another, it will be deleted.
 
 * `--dry-run` flag
 * `--validate-config` flag
+* Deletion of empty folders
