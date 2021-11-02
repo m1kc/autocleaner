@@ -1,7 +1,8 @@
 # autocleaner
 
 A program that deletes your files with configurable storage period.
-It uses `find` internally, and therefore it's very fast.
+It uses `find` internally, and therefore it's very fast (and that's
+important when you're dealing with millions of files).
 
 :wrench: Quality: **beta** 
  
