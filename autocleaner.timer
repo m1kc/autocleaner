@@ -1,0 +1,10 @@
+[Unit]
+Description=autocleaner timer
+
+[Timer]
+Unit=autocleaner.service
+OnCalendar=*-*-* *:23:55
+
+[Install]
+WantedBy=timers.target
+

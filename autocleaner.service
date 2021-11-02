@@ -1,0 +1,7 @@
+[Unit]
+Description=autocleaner
+
+[Service]
+Type=oneshot
+ExecStart=/opt/autocleaner/main.rb
+

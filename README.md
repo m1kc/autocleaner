@@ -10,7 +10,15 @@ It uses `find` internally, and therefore it's very fast.
 
 ## Install
 
-(coming soon)
+```sh
+cd /opt
+sudo git clone https://github.com/m1kc/autocleaner.git
+cd autocleaner
+cp config.rb.example config.rb
+nano config.rb  # edit config as you see fit
+sudo make install
+sudo make activate  # this will enable and start systemd timer
+```
 
 ## Usage
 
