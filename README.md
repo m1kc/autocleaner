@@ -49,7 +49,6 @@ and to be deleted by another, it will be deleted.
 
 (for requests, create an issue or drop me a note at m1kc@yandex.ru)
 
-* Don't overwrite /etc on make install
 * `--dry-run` flag
 * `--validate-config` flag
 * Deletion of empty folders
