@@ -10,7 +10,7 @@ important when you're dealing with millions of files).
 
 ## Requirements
 
-* Ruby 2.7
+* Ruby 2.0...2.7
 * `find` in PATH
 
 ## Install
@@ -44,6 +44,10 @@ Days are counted from file's _modification time_ (mtime).
 **Note:** you **can** define overlapping folders. In such cases, **smallest**
 storage period wins. In other words, if a file is to be kept by one policy
 and to be deleted by another, it will be deleted.
+
+## Known caveats
+
+* On Ruby 2.0.0p648, the following warning appears: `/etc/autocleaner/config.rb:1:in '<top (required)>': Use RbConfig instead of obsolete and deprecated Config`. This is harmless and should be ignored.
 
 ## Planned features
 
