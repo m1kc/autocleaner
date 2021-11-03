@@ -3,7 +3,7 @@ Description=autocleaner timer
 
 [Timer]
 Unit=autocleaner.service
-OnCalendar=*-*-* *:23:55
+OnCalendar=*-*-* 23:55:00
 
 [Install]
 WantedBy=timers.target
