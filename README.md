@@ -29,12 +29,18 @@ sudo make activate  # this will enable and start systemd timer
 Edit `/etc/autocleaner/config.rb` and define which folders you want to
 be auto-cleaned and how long to store files inside them.
 
+**Added in v1.1.0:** you can also set :glob parameter to limit the scope
+to files matching the given pattern, like `*.log`, `temp-*`,
+or `*` (all files, default). Note that unlike in bash, `*` matches
+dotfiles as well.
+
 ```ruby
 module Config
 FOLDERS = [
 	# Define your folders here.
 	{ :folder => "/tmp", :days => 900 },
 	{ :folder => "/var/log/myservice", :days => 30 },
+	{ :folder => "/var/log/myotherservice", :days => 60, :glob => "*.txt" },
 ]
 end
 ```
